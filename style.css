@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow-x: hidden;
+}
+.img {
+  max-width: 100%;
+  height: auto;
+}
+
+.navbar-brand {
+  font-family: "Great Vibes", cursive;
+
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f0ad4e;
+}
+.collapse.navbar-collapse .navbar-nav .nav-link {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.collapse.navbar-collapse .navbar-nav .nav-link:hover {
+  color: brown;
+  font-weight: bold;
+}
+.collapse.navbar-collapse .navbar-nav .nav-link::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 0;
+  height: 4px;
+  border-radius: 10px;
+  background: rgb(142, 72, 38);
+  transition: width 0.3s ease;
+}
+.collapse.navbar-collapse .navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+.img-fluid.helo {
+  width: 100%;
+  height: auto;
+}
+.overlay {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  width: 90%;
+  height: 50%;
+}
+.great-vibes-regular {
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hero h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: 35px;
+  font-weight: 700;
+  color: white;
+}
+.hero p {
+  font-size: 20px;
+  color: white;
+  width: 40%;
+  margin: 25px, 0;
+}
+.offer {
+  background: white;
+  overflow: hidden;
+}
+.offer-container {
+  background: rgb(252, 250, 250);
+  color: white;
+  padding: 40px 20px;
+  overflow: hidden;
+}
+.box {
+  background: rgb(15, 9, 9);
+  color: rgb(233, 223, 223);
+  border-radius: 10px;
+  padding: 20px;
+
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.img-box {
+  flex-shrink: 0;
+}
+
+.detail-box {
+  flex: 1;
+}
+.detail-box h4 {
+  font-family: "Great Vibes", cursive;
+  font-size: 28px;
+}
+.detail-box h6 {
+  font-family: "Great Vibes", cursive;
+  font-size: 28px;
+}
+.offer-container img {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid orange;
+}
+.offer-container h5 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.offer-container h6 {
+  font-size: 38px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.offer-container img:hover {
+  transform: scale(1.1);
+}
+.card-body {
+  background-color: rgb(6, 6, 33);
+}
+.card-body h5 {
+  color: white;
+}
+.card-body p {
+  color: white;
+}
+.col img:hover {
+  transform: scale(1.1);
+}
+.menu h2 {
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  /* font-style: normal; */
+}
+.row h4 {
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+}
+iframe {
+  max-width: 100%;
+}
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: row;
+  }
+}
+@media (max-width: 525px) {
+  .hero p {
+    font-size: 18px;
+    color: rgb(245, 245, 245);
+    width: 100%;
+  }
+}
